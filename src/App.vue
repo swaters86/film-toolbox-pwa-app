@@ -8,7 +8,7 @@
       </p>
     </header>
     <main>
-      <router-view/>
+      <router-view />
     </main>
     <footer class="app-footer">
       <p>
@@ -30,7 +30,6 @@
     background-color: #fff;
     color: #444;
     font-size: 16px;
-    
   }
 
   .container {
@@ -55,7 +54,7 @@
 
   @media screen and (max-width: 375px) {
     .container {
-      width: 340px;
+      width: 355px;
     }
 
     .app-header .app-headline {
@@ -63,7 +62,7 @@
     }
 
     .app-header .app-description {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
 </style>

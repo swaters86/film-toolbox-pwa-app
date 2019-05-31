@@ -31,9 +31,10 @@
 
   @media screen and (max-width: 375px) {
     .panel {
-      width: 165px;
-      height: 165px; 
-      line-height: 145px;
+      width: 172px;
+      height: 172px; 
+      line-height: 155px;
+      padding: 10px;
     }
   }
 </style>
