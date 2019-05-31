@@ -10,3 +10,10 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+const shouldSW = 'serviceWorker' in navigator
+if (shouldSW) {
+  navigator.serviceWorker.register('service-worker-cache.js').then(() => {
+    console.log("Service Worker Registered!")
+  })
+}
