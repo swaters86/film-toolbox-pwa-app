@@ -10,7 +10,7 @@
       <router-view />
     </main>
     <footer class="app-footer">
-      <p>
+      <p class="app-footer-content">
         <small>Made With Love By Steven Waters © 2019</small>
       </p>
     </footer>
@@ -50,6 +50,17 @@
 
   .app-header .app-description {
     font-size: 1.5rem;
+  }
+
+  .app-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+  }
+
+  .app-footer-content {
+    padding: 20px 0;
+    font-size: 1.4rem;
   }
 
   @media screen and (max-width: 375px) {

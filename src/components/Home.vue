@@ -2,10 +2,12 @@
   <section class="panels">
     <div class="panel" v-for="(link, index) in links" :key="index">
       <div class="panel-content">
-        <router-link :to="link.to">{{ link.name }}</router-link>
+        <router-link :to="link.to">{{link.name}}</router-link>
       </div>
       <footer class="panel-footer">
-            <p class="count-message">{{link.count}} links &amp; counting. <SVGIconRightArrow color="#333" /></p> 
+             <router-link :to="link.to">
+              {{link.count}} links &amp; counting. <SVGIconRightArrow color="#333" />
+             </router-link>
       </footer>
     </div>
   </section>
@@ -25,7 +27,7 @@
     text-align: center; 
   }
 
-  .panel a:link, .panel a:visited, .panel a:active {
+  .panel .panel-content a:link, .panel .panel-content a:visited, .panel .panel-content a:active {
     color: #fff;
     font-size: 1.5rem;
   }
@@ -39,9 +41,14 @@
     background: #efefef;
     padding: 10px 0;
   }
+  .panel-footer:hover {
+    background: #a7ff7a;
+    transition: background 2s;
+  }
 
   .panel-footer .count-message {
       color: #333;
+      text-decoration: none;
   }
 
   .panel-footer .count-message .svg-icon {
@@ -49,12 +56,16 @@
       top: 7px;
       left: 6px;
   }
-
+  
   @media screen and (max-width: 375px) {
     .panel {
-      width: 172px;
-      height: 172px; 
-      padding: 10px;
+      width: 175px;
+    }
+
+    .panel-footer .count-message .svg-icon {
+      position: relative;
+      top: 7px;
+      left: 0px;
     }
   }
 </style>
