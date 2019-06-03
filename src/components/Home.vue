@@ -5,7 +5,7 @@
         <router-link :to="link.to">{{link.name}}</router-link>
       </div>
       <footer class="panel-footer">
-             <router-link :to="link.to">
+             <router-link :to="link.to" class="count-message">
               {{link.count}} links &amp; counting. <SVGIconRightArrow color="#333" />
              </router-link>
       </footer>
