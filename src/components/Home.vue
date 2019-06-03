@@ -47,14 +47,14 @@
   }
 
   .panel-footer .count-message {
-      color: #333;
-      text-decoration: none;
+    color: #333;
+    text-decoration: none;
   }
 
   .panel-footer .count-message .svg-icon {
-      position: relative;
-      top: 7px;
-      left: 6px;
+    position: relative;
+    top: 7px;
+    left: 6px;
   }
   
   @media screen and (max-width: 375px) {
@@ -110,7 +110,6 @@ export default {
         name: 'Blogs',
         to: '/blogs',
         count: 100, 
-
       }, 
       {
         name: 'Misc. Websites',
@@ -122,13 +121,11 @@ export default {
         name: 'Sliders',
         to: '/sliders',
         count: 10, 
-
       }, 
       {
         name: 'Stabilizers',
         to: '/stabilizers',
         count: 19, 
-
       }, 
       {
         name: 'Lighting',
@@ -139,7 +136,6 @@ export default {
         name: 'Misc. Gear',
         to: '/misc-gear', 
         count: 23, 
-
       },
       {
         name: 'Tutorials',
