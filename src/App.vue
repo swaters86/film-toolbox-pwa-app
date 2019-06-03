@@ -3,8 +3,7 @@
     <header class="app-header">
       <h1 class="app-headline">Filmmaker's Toolbox</h1>
       <p class="app-description">
-        A website that provides you handy links to the web's best resources when it comes to filmmaking. 
-        This website featuers a hand-currated list of apps , websites, gear, equipment, and other resources that are related to filmmaking.
+        Hand-picked products and services for the filmmaker in you.
       </p>
     </header>
     <main>
@@ -27,7 +26,8 @@
 
   body {
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-    background-color: #fff;
+    background: #a8ff78; 
+    background: linear-gradient(to right, #78ffd6, #a8ff78); 
     color: #444;
     font-size: 16px;
   }
