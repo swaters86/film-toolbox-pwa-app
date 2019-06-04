@@ -2,12 +2,12 @@
   <section class="panels">
     <div class="panel" v-for="(link, index) in links" :key="index">
       <div class="panel-content">
-        <router-link :to="link.to">{{link.name}}</router-link>
+        <router-link :to="link.to" :id="link.id">{{link.name}}</router-link>
       </div>
       <footer class="panel-footer">
-             <router-link :to="link.to" class="count-message">
-              {{link.count}} links &amp; counting. <SVGIconRightArrow color="#333" />
-             </router-link>
+        <router-link :to="link.to" class="count-message">
+        {{link.count}} links &amp; counting... <SVGIconRightArrow color="#333" />
+        </router-link>
       </footer>
     </div>
   </section>
@@ -17,14 +17,15 @@
   .panels {
     display: flex; 
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: space-between;
+    margin-top: 10px; 
   }
 
   .panel { 
     width: 200px;
-    margin-top: 10px;
     background: #333;
     text-align: center; 
+    margin-bottom: 10px;
   }
 
   .panel .panel-content a:link, .panel .panel-content a:visited, .panel .panel-content a:active {
@@ -78,7 +79,7 @@ export default {
     links: [
       {
         name: 'Cameras',
-        to: '/cameras', 
+        to: '/items/cameras/1', 
         count: 10,
       },
       {

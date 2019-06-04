@@ -2,8 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 // Page content
-import Cameras from '@/components/Cameras'
-import Page1 from '@/components/Page1'
+import Items from '@/components/Items'
 import Home from '@/components/Home'
 
 // Fallback page
@@ -19,14 +18,10 @@ export default new Router({
       component: Home
     },
     {
-      path: '/page-1',
-      name: 'Page 1',
-      component: Page1
-    },
-    {
-      path: '/cameras',
-      name: 'Cameras',
-      component: Cameras
+      path: '/items/:category/:id',
+      name: 'Items',
+      component: Items,
+      props: true,
     },
     {
       path: '**',
