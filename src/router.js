@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 // Page content
 import Items from '@/components/Items'
+import Login from '@/components/Login'
 import Home from '@/components/Home'
 
 // Fallback page
@@ -16,6 +17,11 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
     },
     {
       path: '/items/:category/:id',

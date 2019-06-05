@@ -1,0 +1,33 @@
+{
+    "items": {
+        "cameras": [
+            {
+                "title": "black magic cinema camera 4k",
+                "description": "Vivamus suscipit mauris quis feugiat tristique. Nunc molestie",
+                "imageSrc": "/images/cameras/blackmagic-production-camera-4k.jpg",
+                "imageAlt": "A square looking camera with rounded corners."
+            },
+            {
+                "title": "black magic cinema camera 4k",
+                "description": "Vivamus suscipit mauris quis feugiat tristique. Nunc molestie",
+                "imageSrc": "/images/cameras/blackmagic-production-camera-4k.jpg",
+                "imageAlt": "A square looking camera with rounded corners."
+            },
+            {
+                "title": "black magic cinema camera 4k",
+                "description": "Vivamus suscipit mauris quis feugiat tristique. Nunc molestie",
+                "imageSrc": "/images/cameras/blackmagic-production-camera-4k.jpg",
+                "imageAlt": "A square looking camera with rounded corners."
+            },
+            {
+                "title": "Black Magic Cinema Camera 4k",
+                "description": "Vivamus suscipit mauris quis feugiat tristique. Nunc molestie",
+                "imageSrc": "/images/cameras/blackmagic-production-camera-4k.jpg",
+                "imageAlt": "A square looking camera with rounded corners."
+            }
+        ], 
+        "sliders" : [
+
+        ]
+    }
+}
