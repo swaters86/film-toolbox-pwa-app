@@ -21,6 +21,6 @@ new Vue({
   created() {
     firebase.initializeApp(firebaseConfig);
   },
-  components: { App },
+  components: {App},
   template: '<App/>'
 })

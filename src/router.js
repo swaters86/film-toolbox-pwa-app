@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 // Page content
 import Items from '@/components/Items'
+import Dashboard from '@/components/Dashboard'
 import Login from '@/components/Login'
 import Home from '@/components/Home'
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/login',
       name: 'Login',
       component: Login
+    },
+    {
+      path: '/dashboard',
+      name: 'Dashboard',
+      component: Dashboard
     },
     {
       path: '/items/:category/:id',
